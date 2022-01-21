@@ -28,12 +28,28 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            var Pengiun = new Bird(false, "yellow", 2)
+            {
+                Name = "Mumble",
+                Age = 5,
+                Noise = "Honk Honk"
+            };
+            Pengiun.MakeNoise();
+            Pengiun.FlyAway();
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            var Chameleon = new Reptile(false, "all the colors", 1)
+            {
+                Name = "Pascal",
+                Age = 3,
+                Noise = "huff puff"
+            };
+            Chameleon.MakeNoise();
+            Chameleon.CanIPet();
         }
     }
 }
