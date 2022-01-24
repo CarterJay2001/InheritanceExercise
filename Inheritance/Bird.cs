@@ -17,9 +17,9 @@ namespace Inheritance
         public string BeakColor { get; set; }
         public int WingCount { get; set; }
 
-        public void FlyAway()
+        public string FlyAway()
         {
-            Console.WriteLine(CanFly ? "Flap flap" : $"{Name} can't fly");
+            return CanFly ? "Flap flap" : $"{Name} can't fly";
         }
     }
 }

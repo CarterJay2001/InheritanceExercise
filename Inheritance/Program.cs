@@ -34,8 +34,13 @@ namespace Inheritance
                 Age = 5,
                 Noise = "Honk Honk"
             };
-            Pengiun.MakeNoise();
-            Pengiun.FlyAway();
+            Console.WriteLine($"Pengiun" +
+                $"\nHis name is {Pengiun.Name}" +
+                $"\nHe is {Pengiun.Age} years old" +
+                $"\nHis beak is {Pengiun.BeakColor}" +
+                $"\nHe has {Pengiun.WingCount} wings" +
+                $"\nCan he fly? {Pengiun.FlyAway()}" +
+                $"{Pengiun.MakeNoise()}\n");
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
@@ -48,8 +53,13 @@ namespace Inheritance
                 Age = 3,
                 Noise = "huff puff"
             };
-            Chameleon.MakeNoise();
-            Chameleon.CanIPet();
+            Console.WriteLine($"Chameleon" +
+                $"\nHis name is {Chameleon.Name}" +
+                $"\nHe is {Chameleon.Age} years old" +
+                $"\nHis scales are {Chameleon.ScaleColor}" +
+                $"\nHe has {Chameleon.TailCount} wings" +
+                $"\nCan you pet him? {Chameleon.CanIPet()}" +
+                $"{Pengiun.MakeNoise()}");
         }
     }
 }

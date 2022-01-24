@@ -17,9 +17,9 @@ namespace Inheritance
         public string ScaleColor { get; set; }
         public int TailCount { get; set; }
 
-        public void CanIPet()
+        public string CanIPet()
         {
-            Console.WriteLine(IsPoison ? $"NO! Don't touch {Name}" : "Yea sure give him a pet.");
+            return IsPoison ? $"NO! Don't touch {Name}" : "Yea sure give him a pet.";
         }
     }
 }

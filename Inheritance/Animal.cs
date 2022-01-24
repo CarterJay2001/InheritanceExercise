@@ -17,9 +17,9 @@ namespace Inheritance
         public int Age { get; set; }
         public string Noise { get; set; }
 
-        public void MakeNoise()
+        public string MakeNoise()
         {
-            Console.WriteLine($"{Name} says {Noise}!");
+            return $"{Name} says {Noise}!";
         }
     }
 }
